@@ -4,15 +4,9 @@ from ucimlrepo import fetch_ucirepo
 adult = fetch_ucirepo(id=2) 
   
 # data (as pandas dataframes) 
-X = adult.data.features 
-y = adult.data.targets 
+X = adult.data.features.to_numpy()
+y = adult.data.targets.to_numpy()
   
 
-x_array = X.to_numpy()
-y_array = y.to_numpy()
-
-
-
-print(x_array)
-print(y_array)
-
+print("X array: ", X)
+print("Y array: ", y)

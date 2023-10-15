@@ -5,14 +5,8 @@ import numpy as np
 heart_disease = fetch_ucirepo(id=45) 
   
 # data (as pandas dataframes) 
-X = heart_disease.data.features 
-y = heart_disease.data.targets 
+X = heart_disease.data.features.to_numpy() 
+y = heart_disease.data.targets.to_numpy()
 
-x_array = X.to_numpy()
-y_array = y.to_numpy()
-
-
-
-print(x_array)
-print(y_array)
-
+print("X array: ", X)
+print("Y array: ", y)
