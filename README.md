@@ -1,6 +1,6 @@
 # CP322-Mini-Project
 
-This is for the CP322 machine learning Mini-Project due October 15, 2023
+This is for the CP322 machine learning Mini-Project due October 22, 2023
 
 
 Progress:
